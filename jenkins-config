@@ -20,7 +20,7 @@ if [ -t 0 ]; then
     err "\`cat config.xml | sudo /snap/bin/jenkins.config\`"
     err ""
     err "You will need to restart Jenkins to pick up any changes:"
-    err "\`servicectl restart snap.jenkins.jenkins.service\`"
+    err "\`systemctl restart snap.jenkins.jenkins.service\`"
     err ""
     err "You can access Jenkins from your web browser at http://localhost:8080"
     exit 1
